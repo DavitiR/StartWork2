@@ -8,20 +8,20 @@
 
 body{
     background-color: #F7F8FA;
+
 }
 
 
 /******************** HEADER  ********************/
 header{
-    width: 100%;
-    height: 100px;
+    
     margin-bottom: 100px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
 
 .container{
-    width: 1280px;
+    max-width: 1180px;
     margin: auto;
     
 }
@@ -50,7 +50,34 @@ header{
     
 
 }
+
+.menu-none{
+    display: none;
+    cursor: pointer;
+    position: relative;
+}
  
+.dropdown-menu{   
+    right: 2%;
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    background-color: rgba(225, 225, 225, 1.5);
+}
+
+.dropdown-menu ul li{ 
+    text-align: center;  
+    margin-top: 50px;
+    padding: 0px 70px;
+    width: 400px;
+    margin-bottom: 50px;
+    list-style-type: none;
+    font-size: 28px;
+    cursor: pointer;
+
+}
+
+
 
 
 /******************** SECTION 1 ********************/
@@ -59,12 +86,10 @@ header{
 }
 
 .s-box{
-    height: 585px;
     text-align: center;
 }
 
 .s-box_inner{
-    width: 1000px;
     margin: auto;
     margin-bottom: 48px;
 }
@@ -135,10 +160,6 @@ header{
     
 }
 
-.s2-box{
-    height: 643px;
-}
-
 .s2-title{
     text-align: center;
     font-size: 31px;
@@ -147,7 +168,7 @@ header{
 
 .s2-card_list{
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 .s2-card{
@@ -201,9 +222,6 @@ header{
     margin-bottom: 100px;
 }
 
-.s3-box{
-    height: 643px;
-}
 
 .s3-title{
     text-align: center;
@@ -223,8 +241,6 @@ header{
 .grid-item{
     display: flex;
     padding: 30px 40px;
-    height: 240px;
-    width: 600px;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
@@ -271,10 +287,6 @@ header{
     margin-bottom: 100px;
 }
 
-.s4-box{
-    height: 643px;
-}
-
 .s4-title{
     text-align: center;
     font-size: 32px;
@@ -283,15 +295,11 @@ header{
 
 .s4-card{
     display: flex;
-    margin: auto;
-    justify-content: space-between;
-    padding: 0px 20px;
+    gap: 30px;
     margin-bottom: 60px;
 }
 
 .s4-card_inner{
-    width: 600px;
-    height: 400px;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
@@ -357,10 +365,6 @@ header{
     margin-bottom: 100px;
 }
 
-.s5-box{
-    height: 643px;
-}
-
 .s5-title{
     text-align: center;
     font-size: 32px;
@@ -370,15 +374,12 @@ header{
 .s5-slidshow{
     display: flex;
     margin: auto;
-    justify-content: space-between;
+    gap: 30px;
 
 }
 
 .s5-card{
-    height: 480px;
-    width: 320px;
     background-color: white;
-    flex-direction: column;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     text-align: center;
@@ -443,10 +444,6 @@ header{
     margin-bottom: 100px;
 }
 
-.s6-box{
-    height:643px;
-}
-
 .s6-title{
     font-size: 32px;
     text-align: center;
@@ -454,11 +451,9 @@ header{
 }
 
 .s6-img img{
-    display: flex;
-    margin: auto;
+    width: 100%;
     margin-bottom: 60px;
     filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.25));
-    border-radius: 15px;
 }
 
 .s6-btns{
@@ -508,19 +503,15 @@ header{
 }
 
 .s7-box{
-    height: 643px;
     padding-top: 105px;
 }
 
 .s7-card{
     display: flex;
-    justify-content: center;
     gap: 40px;
 }
 
 .s7-card_inner{
-    width: 600px;
-    height: 500px;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
@@ -528,13 +519,13 @@ header{
 .s7-card_title{
     font-size: 20px;
     text-align: center;
+    padding: 0px 80px;
     margin-bottom: 61px;
 }
 
 .s7-card_text{
     font-size: 27px;
-    padding: 0px 80px;
-    margin-bottom: 116px;
+    padding: 0px 80px 70px 80px;
 }
 
 .s7-card_btn button{
@@ -550,6 +541,14 @@ header{
     border-radius: 15px;
     cursor: pointer;
 
+}
+
+.s7-card_btn{
+    padding: 48px 194px;
+}
+
+.s7-card_btn2{
+    padding: 48px 229px;
 }
 
 .s7-card_btn button:hover{
@@ -587,20 +586,17 @@ header{
     padding-left: 24px;
     display: flex;
     margin: auto;
-    width: 440px;
+    width: 100%;
     height: 60px;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     border: 1px solid #000000;
 }
 
-.s7-card_cmnt{
-    margin-bottom: 48px;
-}
 
 .s7-card_cmnt textarea{
     font-size: 20px;
-    width: 440px;
+    width: 100%;
     height: 128px;
     padding-left: 24px;
     display: flex;
@@ -624,7 +620,6 @@ textarea {
 footer{
     width: 100%;
     bottom: 0px;
-    background-color: bisque;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 15px 15px;
 }  
@@ -696,7 +691,7 @@ footer{
     font-size: 18px;
     position: relative;
     height: 50px;
-    width: 320px;
+    width: 100%;
     border-radius: 15px;
     border: 1px solid #000000;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
@@ -717,4 +712,191 @@ footer{
     display: flex;
     justify-content: space-between;
     color: gray;
+}
+
+
+
+
+
+
+/******************** Responsive ********************/
+@media only screen and (max-width: 600px) {
+
+
+
+    /******************** Responsive  Heeader ********************/
+    .header{
+        margin-bottom: 20px;
+    }
+
+    .s-last_text{
+        padding: 0px 10px;
+        margin-bottom: 20px;
+    }
+
+    .s-card_list{
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        justify-items: center;
+    }
+
+    .s-card{
+        width: 150px;
+    }
+
+    .s-btns{
+        flex-direction: column;
+        width: 84%;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+    }
+
+    .menu{
+        display: none;
+    }
+
+
+    .menu-none{
+        display: block;
+    }
+
+    .menu-none:hover .dropdown-menu {
+        display: block;
+    }
+
+    .s2-card_list{
+        display: grid;
+        gap: 60px;
+        justify-content: center;
+
+    }
+
+
+
+
+/********************  Responsive  Section3--->>>> Grd  ********************/    
+    .s3-box{
+        flex-direction: column;
+    }
+
+
+
+    .grid-info{
+        text-align: center;
+    }
+
+
+    .grid-info:nth-child(1) p {
+        margin: auto;
+        padding-bottom: 20px;
+    }
+
+
+    .grid-item:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+
+    .grid-item:nth-child(2) h1{
+        display: block;
+    
+    }
+
+    
+    .grid-item:nth-child(2) p{
+        margin: auto;
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+
+    .grid-item:nth-child(4) {
+       flex-direction: column-reverse;
+    }
+
+    .grid-item:nth-child(4) h1{
+        display: block;
+    }
+    
+    .grid-item:nth-child(4) p{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+
+    .grid-item{
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .s3-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+
+
+    /********************  Responsive  Section4  ********************/
+
+    .s4-card{
+        flex-direction: column;
+    }
+
+
+    .s4-card_title{
+        padding: 0px 20px;
+        margin-bottom: 20px;
+    }
+
+    .s4-card_text{
+        margin-bottom: 20px;
+    }
+
+
+
+
+     /******************** Responsive   Section5  ********************/
+    .previous{
+        display: none;
+    }
+
+    .next{
+        display: none;
+    }
+
+    .s5-slidshow {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+
+
+ /********************  Responsive  Section7  ********************/
+    .s7-card{
+        flex-direction: column;
+    }
+
+
+    .s7-card_btn{
+        display: inline;
+    }
+
+    .s7-card_btn button{
+        margin: auto;
+    }
+
+
+
+
+     /******************** Responsive   Footer  ********************/
+    .fo-box_inner{
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    
 }
